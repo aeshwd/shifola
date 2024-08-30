@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFOLA - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/shifola/index.html">SHIFOLA</a>
+
+            <li class="nav-item" style="list-style: none;">
+                <a class="nav-link" href="/shifola/cart.html" id="cart-link" style="color: black; text-decoration: none;"><i class="fa-solid fa-cart-shopping" style="font-size: 2rem;"></i></a>
+            </li>
+            
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-bottom: 200px; overflow: hidden;">
+        <h2 style="text-align: center; margin-top: 20px;">Your Cart</h2>
+        <section class="cart-list">
+            
+            <!-- Cart items will be inserted here by JavaScript -->
+        </section>
+        <div class="cart-summary" style="font-weight: 700; font-family: sans-serif; font-size: 1.3rem;">
+            <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+            <p>Tax: ₹<span id="tax">0.00</span></p>
+            <p>Total: ₹<span id="total">0.00</span></p>
+            <p id="discount-info"></p>
+            <p style="background-color: black; padding: 10px; color: white;">You got 20% off, Apply <span style="color: yellow;">DISCOUNT20</span>   Discount Coupon</p>
+            <input type="text" id="coupon-code" placeholder="Enter coupon code">
+            <button onclick="applyCoupon()" style="margin-top: 20px;">Apply Coupon</button> <br>
+
+          <a href="/shifola/success.html">  <button class="buy" style="margin-top: 20px; background-color: green; color: white; border: none; padding: 5px 10px; font-family: sans-serif;font-weight: 700;">BUY NOW</button>  </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 SHIFOLA. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript files -->
+    <script src="cart.js"></script>
+
+</body>
+</html>
